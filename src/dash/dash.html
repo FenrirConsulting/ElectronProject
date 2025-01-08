@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Page</title>
+  <link rel='stylesheet' href='../resources/fonts/fontawesome/css/font-awesome.css'>
+  <link rel='stylesheet' href='../resources/bootstrap3.3.4.css'>
+  <link rel="stylesheet" type='text/css' href="dash.css">
+  <link rel="stylesheet" type='text/css' href="../resources/font-awesome-animation.css">
+  <link rel='stylesheet' type='text/css' href="../resources/dist/jsoneditor.css">
+
+
+  <script>
+    window.console = window.console || function (t) {};
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+  <script src="../resources/dist/jsoneditor.js"></script>
+
+</head>
+
+<body class="draggable">
+
+  <nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0" style="margin-bottom:0px; background-color: #393E46; ">
+
+    <div class="navbar-brand col-sm-3 col-md-2 mr-0" style="float:left; margin-right: 1%; ">
+      <a href="#" style="float:left;"> <img src="../resources/Logo.jpg"></a>
+    </div>
+
+    <div style="text-align:center">
+      <div style="display:inline">
+        <h1>CVS Distribution Center Statistics Dashboard </h1>
+      </div>
+    </div>
+
+  </nav>
+
+  <div id="wrapper" style ="margin-right : 0px;">
+
+
+    <div id="sidebar-wrapper" class="notDraggable">
+      <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
+        <li class="active">
+          <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-tachometer fa-stack-1x "></i></span>
+            Dashboard</a>
+          <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-tachometer fa-stack-1x "></i></span>
+                <div id="recapFormButton"><span id="morningRecap" class="notDraggable">Empty Function</span></div>
+              </a></li>
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-tachometer fa-stack-1x "></i></span>
+                <div id="updateFormButton"><span id="updateForm" class="notDraggable">Update Form</span></div>
+              </a></li>
+          </ul>
+        </li>
+
+        <li class="notDraggable">
+          <a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                class="fa fa-television fa-stack-1x "></i></span>Display Boards</a>
+          <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-television fa-stack-1x "></i></span>
+                <div id="button1"><span id="page1" class="notDraggable">Link1</span></div>
+              </a></li>
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-television fa-stack-1x "></i></span>
+                <div id="button2"><span id="page2" class="notDraggable">Link2</span></div>
+              </a></li>
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-television fa-stack-1x "></i></span>
+                <div id="button3"><span id="page3" class="notDraggable">Link3</span></div>
+              </a></li>
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-television fa-stack-1x "></i></span>
+                <div id="button4"><span id="page4" class="notDraggable">Link4</span></div>
+              </a></li>
+              <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                class="fa fa-television fa-stack-1x "></i></span>
+            <div id="button14"><span id="page14" class="notDraggable">Link7</span></div>
+          </a></li>
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-television fa-stack-1x "></i></span>
+                <div id="button5"><span id="page5" class="notDraggable">Link5</span></div>
+              </a></li>
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-television fa-stack-1x "></i></span>
+                <div id="button6"><span id="page6" class="notDraggable">Link6</span></div>
+              </a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#"><span class="fa-stack fa-lg pull-left"><i
+                class="fa fa-newspaper-o fa-stack-1x "></i></span>News</a>
+          <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-newspaper-o fa-stack-1x "></i></span>
+                <div id="button7"><span id="page7">Link7</span></div>
+              </a></li>
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-newspaper-o fa-stack-1x "></i></span>
+                <div id="button8"><span id="page8">Link8</span></div>
+              </a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#"> <span class="fa-stack fa-lg pull-left"><i
+                class="fa fa-bar-chart fa-stack-1x "></i></span>Charts</a>
+          <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-bar-chart fa-stack-1x "></i></span>
+                <div id="button9"><span id="page9">Link9</span></div>
+              </a></li>
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-bar-chart fa-stack-1x "></i></span>
+                <div id="button10"><span id="page10">Link10</span></div>
+              </a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#"><span class="fa-stack fa-lg pull-left"><i
+                class="fa fa-question fa-stack-1x "></i></span>Experimental</a>
+          <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-question fa-stack-1x "></i></span>
+                <div id="button11"><span id="page11">Link11</span></div>
+              </a></li>
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-question fa-stack-1x "></i></span>
+                <div id="button12"><span id="page12">Link12</span></div>
+              </a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-wrench fa-stack-1x "></i></span>
+            <div id="button13"><span id="page13">Configuration Editor</span></div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-bomb fa-stack-1x "></i></span>Reset
+            Clients</a>
+          <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-bomb fa-stack-1x "></i></span>
+                <div id="dpsBoardAButton"><span id="dpsBoardAButton">DPS Board A</span></div>
+              </a></li>
+
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-bomb fa-stack-1x "></i></span>
+                <div id="dpsBoardBButton"><span id="dpsBoardBButton">DPS Board B</span></div>
+              </a></li>
+
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-bomb fa-stack-1x "></i></span>
+                <div id="repackBoardAButton"><span id="repackBoardAButton">Repack Board A</span></div>
+              </a></li>
+
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-bomb fa-stack-1x "></i></span>
+                <div id="repackBoardBButton"><span id="repackBoardBButton">Repack Board B</span></div>
+              </a></li>
+
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-bomb fa-stack-1x "></i></span>
+                <div id="casesBoardAButton"><span id="casesBoardAButton">Cases Board A</span></div>
+              </a></li>
+
+            <li><a href="#"><span class="fa-stack fa-lg pull-left notDraggable"><i
+                    class="fa fa-bomb fa-stack-1x "></i></span>
+                <div id="casesBoardBButton"><span id="casesBoardBButton">Cases Board B</span></div>
+              </a></li>
+
+          </ul>
+        </li>
+
+        <li>
+          <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-close fa-stack-1x "></i></span><button
+              id="closeButton" class="btn btn-danger notDraggable"><span style="font-size: 16; display:inline;">Close
+                Window</span></button></a>
+        </li>
+
+      </ul>
+    </div>
+
+
+    <div id="page-content-wrapper" style="height : 100%; padding: 5px; padding-left: 10px;">
+
+      <div id="conditionalContent" ">
+
+        <div class=" pageFrame" style="display:none; " id="htmlDiv">
+        <div style="height:100%">
+          <webview class="" src="" id="webviewFrame" " nodeintegration></webview>
+          </div>
+        </div>
+
+        <div class=" notDraggable" id="hiddenEditor" style="display:none; height:100%; width:100%;">
+
+            <a href="#"></i></span><button id="saveJSON" class="btn btn-primary notDraggable"><span
+                  style="font-size: 16; display:inline; font-weight: bold;"><i class="fa fa-save "></i> Save
+                  JSON</span></button></a>
+
+            <div id="jsoneditor"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <script>
+      window.$ = window.jQuery = require('../resources/jquery-3.4.1.min.js');
+    </script>
+    <script id="rendered-js" src="dash.js"> </script>
+</body>
+
+</html>

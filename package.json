@@ -1,0 +1,25 @@
+{
+  "name": "performance-display",
+  "version": "2.0.0",
+  "description": "Performance Displays",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "Christopher Olson",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^4.0.4"
+  },
+  "dependencies": {
+    "@json-editor/json-editor": "^2.2.1",
+    "chart.js": "^2.9.3",
+    "chartjs-plugin-datalabels": "^0.7.0",
+    "chartjs-plugin-labels": "^1.1.0",
+    "custom-electron-titlebar": "^3.2.2-hotfix62",
+    "jsoneditor": "^8.6.6"
+  }
+}

@@ -1,0 +1,36 @@
+
+html {
+    padding: 5px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(33,37,43);
+    color: #212624;
+    font-size: calc(1em + 1.0vmin);
+    margin: .2em;
+    font-weight: bold;
+    font-family: Helvetica;
+    color: rgb(241,75,53);
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+        0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.draggable {
+    -webkit-app-region: drag;
+}
+
+.notDraggable{
+
+    -webkit-app-region: no-drag
+}
+  
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.dashSet {
+    background-color: rgb(36, 51, 66);
+}
+

@@ -1,0 +1,168 @@
+html, body {
+    height : 100%;
+    width : 100%;
+    background-color: rgb(33,37,43);
+    color: #fff;
+    position : fixed;
+}
+
+.grid_wrapper {
+    padding: 0px;
+    margin: 0px;
+    height : 100vh;
+    width : 100vw;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-rows: 10% 90%;
+    background-color: rgb(33,37,43);
+}
+
+.header_wrapper {
+    padding: 0px;
+    margin: 0px;
+    height : 100%;
+    width : 100%;
+    text-align: center;
+    display: grid;
+    grid-row-start : 1;
+    grid-template-columns: 33% 33% 33%;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: Helvetica;
+    color: rgb(241,75,53);
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+        0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.body_wrapper {
+    display: grid;
+    grid-row-start: 2;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-row-gap : 8px;
+    height :95%;
+    width : 100%;
+    margin : 5px;
+    font-size: 1.3vw;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.results_wrapper {
+    height : 100%;
+    text-align: left;
+    margin-left: 15px;
+    display:grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    color : rgb(241,75,53);
+}
+
+.results_label{
+
+    display : inline-block;
+    color : yellow;
+
+}
+
+.categoryLabel {
+    text-align: left;
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: normal;
+    transform: translateY(50%);
+}
+
+.chart_wrapper, .chart_wrapper2, .chart_wrapper3, .chart_wrapper4{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background-size: 100% 100%;
+    font-size: 1.3vw;
+    height : 100%;
+    width : 98%;
+    border: 1px solid;
+}
+
+.canvas_wrapper {
+
+    margin : 0px;
+    display: flex;
+    height : 100%;
+    width : 100%;
+}
+
+#chart, #chart2, #chart3, #chart4{
+    background-color: grey;
+    color: white;
+}
+
+.logo {
+
+    grid-column: 1/1;
+    padding: 10px;
+    align-self: center;
+}
+
+.title {
+    grid-column: 2 /2;
+    align-self: top;
+    text-align: center;
+    margin-top: .9em;
+    font-size: calc(1.3em + 1.0vmin);
+    text-shadow: 0 0 3px #000;
+    -moz-text-shadow: 0 0 3px #000;
+    -webkit-text-shadow: 0 0 3px #000;
+}
+
+.date {
+    grid-column : 3 / 3;
+    align-self: top;
+    text-align: center;
+    margin: .9em;
+    font-size: calc(1.3em + 1.0vmin);
+    text-shadow: 0 0 3px #000;
+    -moz-text-shadow: 0 0 3px #000;
+    -webkit-text-shadow: 0 0 3px #000;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.test1 {
+
+    background-color: rgb(36, 51, 66);
+}
+
+.test2 {
+
+    background-color: rgb(36, 51, 66);
+
+}
+
+.graph {
+
+    display : block;
+    margin-left: auto;
+    margin-right: auto;
+    width : 100%;
+    height : 100%;
+}
+
+.draggable {
+    -webkit-app-region: drag;
+}
+
+.pass {
+    color: rgb(64, 235, 42);
+}
+
+.warning {
+
+    color: rgb(247, 243, 15);
+}
+
+.fail {
+    color: red;
+}

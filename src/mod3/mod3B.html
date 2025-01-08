@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="mod3.css">
+    <title>Module 3B</title>
+</head>
+
+<body class="draggable">
+    <div id="grid_wrapper" class="mod3Set">
+
+        <div id="header_wrapper">
+            <img src="../resources/Logo.jpg" float="left">
+            <h1 id="Title"></h1>
+            <h1 id="Week"></h1>
+            <h1 id="Date"></h1>
+        </div>
+
+
+        <div id="tbl_wrapper">
+            <table id="tbl">
+                <thead>
+                    <tr>
+                        <th id="assocID">EMP</br>ID</th>
+                        <th>STD</br>Time</th>
+                        <th>Actual</br> Time</th>
+                        <th>Util</th>
+                        <th>Performance</th>
+                        <th>2 Week Performance</th>
+                    </tr>
+                </thead>
+                <tbody id="DataStream">
+
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+    <script>
+        window.$ = window.jQuery = require('../resources/jquery-3.4.1.min.js');
+    </script>
+    <script src="mod3B.js"></script>
+
+</body>
+
+</html>

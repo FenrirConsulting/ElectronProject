@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" type="text/css" href="chart1.css">
+    <title></title>
+</head>
+
+<body class="draggable . chartSet">
+
+    <div class="grid_wrapper">
+
+        <div class="header_wrapper">
+            <img src="../resources/Logo.jpg" float="left" class="logo">
+            <h1 id="Title" class="title"></h1>
+            <h1 id="Date" class="date">Date</h1>
+        </div>
+
+        <div class="body_wrapper" id="body_wrapper">
+
+            <div class="chart_wrapper" id="chart_wrapper1">
+                <div class="canvas_wrapper"><canvas id="chart"></canvas></div>
+                <div class="results_wrapper">
+                    <div class="categoryLabel">Goal : <div id="dpsTotal" class="results_label">100</div>
+                    </div>
+                    <div class="categoryLabel">Current Total : <div id="dpsRunningTotal" class="results_label">200</div>
+                    </div>
+                    <div class="categoryLabel">Hourly Goal : <div id="dpsHourlyGoal" class="results_label">400</div>
+                    </div>
+                    <div class="categoryLabel">To Goal : <div id="dpsToGoal" class="results_label">300</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart_wrapper2" id="chart_wrapper2">
+                <div class="canvas_wrapper"><canvas id="chart2"></canvas></div>
+                <div class="results_wrapper">
+                    <div class="categoryLabel">Goal : <div id="mpsTotal" class="results_label">100</div>
+                    </div>
+                    <div class="categoryLabel">Current Total : <div id="mpsRunningTotal" class="results_label">200</div>
+                    </div>
+                    <div class="categoryLabel">Hourly Goal : <div id="mpsHourlyGoal" class="results_label">400</div>
+                    </div>
+                    <div class="categoryLabel">To Goal : <div id="mpsToGoal" class="results_label">300</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart_wrapper3" style="display:none;" id="chart_wrapper3">
+                <div class="canvas_wrapper"><canvas id="chart3"></canvas></div>
+                <div class="results_wrapper">
+                    <div class="categoryLabel">Goal : <div id="cpsTotal" class="results_label">100</div>
+                    </div>
+                    <div class="categoryLabel">Current Total : <div id="cpsRunningTotal" class="results_label">200</div>
+                    </div>
+                    <div class="categoryLabel">Hourly Goal : <div id="cpsHourlyGoal" class="results_label">400</div>
+                    </div>
+                    <div class="categoryLabel">To Goal : <div id="cpsToGoal" class="results_label">300</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart_wrapper4" id="chart_wrapper4">
+                <div class="canvas_wrapper"><canvas id="chart4"></canvas></div>
+                <div class="results_wrapper">
+                    <div class="categoryLabel">Goal : <div id="repackTotal" class="results_label">100</div>
+                    </div>
+                    <div class="categoryLabel">Current Total : <div id="repackRunningTotal" class="results_label">200
+                        </div>
+                    </div>
+                    <div class="categoryLabel">Hourly Goal : <div id="repackHourlyGoal" class="results_label">400</div>
+                    </div>
+                    <div class="categoryLabel">To Goal : <div id="repackToGoal" class="results_label">300</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <script src="../resources/d3.js"></script>
+    <script src="chart1.js"></script>
+    <script src="../resources/chartjs-plugin-trendline.min.js"></script>
+    <scirpt src="../resources/chartjs-plugin-datalabels.js"></scirpt>
+    <script src="../resources/chart.js"></script>
+    <script>
+        window.$ = window.jQuery = require('../resources/jquery-3.4.1.min.js');
+        window.$ = window.jQuery = require('../resources/d3.js');
+        window.$ = window.jQuery = require('../resources/canvasJS.js');
+    </script>
+    <!--<script src="test.js"></script>-->
+
+
+</body>
+
+</html>

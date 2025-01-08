@@ -1,0 +1,191 @@
+html {
+    height : 100%;
+    width : 100%;
+    margin: 0;
+    padding : 0;
+}
+
+body {
+    background-color: rgb(33,37,43);
+    color: #fff;
+    height : 100%;
+    width : 100%;
+    margin: 0;
+
+}
+
+.grid_wrapper {
+    padding: 0px;
+    margin: 0px;
+    height : 95vh;
+    width : 95vw;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-rows: 15% 85%;
+    background-color: rgb(33,37,43);
+}
+
+.header_wrapper {
+    padding: 0px;
+    margin: 0px;
+    height : 95vh;
+    width : 95vw;
+    text-align: center;
+    display: grid;
+    grid-row-start : 1;
+    grid-template-columns: 33% 33% 33%;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: Helvetica;
+    color: rgb(241,75,53);
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+        0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.body_wrapper {
+    display: grid;
+    grid-row-start: 2;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    height : 100%;
+    width : 100%;
+    font-size: 1.3vw;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.results_wrapper {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    text-align : center;
+    vertical-align: middle;
+    color : yellow;
+}
+
+.chart_wrapper{
+    display: grid;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-template-rows: 70% 30%;
+    padding-top : 10px;
+    padding-left: 15px;
+    background-size: 100% 100%;
+    font-size: 1.3vw;
+    height : 45vh;
+    width : 45vw;
+}
+
+.chart_wrapper2{
+    display: grid;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-template-rows: 70% 30%;
+    padding-top : 10px;
+    padding-left: 15px;
+    background-size: 100% 100%;
+    padding-right : 50px;
+    height : 45vh;
+    width : 45vw;
+}
+
+.chart_wrapper3{
+    display: grid;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-template-rows: 70% 30%;
+    padding-top : 20px;
+    padding-left: 15px;
+    background-size: 100% 100%;
+    height : 45vh;
+    width : 45vw;
+}
+
+.chart_wrapper4{
+    display: grid;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-template-rows: 70% 30%;
+    padding-top : 20px;
+    padding-left: 15px;
+    background-size: 100% 100%;
+    height : 45vh;
+    width : 45vw;
+}
+
+#chart, #chart2, #chart3, #chart4{
+    background-color: grey;
+    width:100%;
+    height:100%;
+    color: white;
+}
+
+.logo {
+
+    grid-column: 1/1;
+    padding: 10px;
+}
+
+.title {
+    grid-column: 2 /2;
+    align-self: top;
+    text-align: center;
+    margin-top: .9em;
+    font-size: calc(1.3em + 1.0vmin);
+    text-shadow: 0 0 3px #000;
+    -moz-text-shadow: 0 0 3px #000;
+    -webkit-text-shadow: 0 0 3px #000;
+}
+
+.date {
+    grid-column : 3 / 3;
+    align-self: top;
+    text-align: center;
+    margin: .9em;
+    font-size: calc(1.3em + 1.0vmin);
+    text-shadow: 0 0 3px #000;
+    -moz-text-shadow: 0 0 3px #000;
+    -webkit-text-shadow: 0 0 3px #000;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.test1 {
+
+    background-color: rgb(36, 51, 66);
+}
+
+.test2 {
+
+    background-color: rgb(36, 51, 66);
+
+}
+
+.graph {
+
+    display : block;
+    margin-left: auto;
+    margin-right: auto;
+    width : 100%;
+    height : 100%;
+}
+
+.draggable {
+    -webkit-app-region: drag;
+}
+
+.pass {
+    color: rgb(64, 235, 42);
+}
+
+.warning {
+
+    color: rgb(247, 243, 15);
+}
+
+.fail {
+    color: red;
+}

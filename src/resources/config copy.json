@@ -1,0 +1,316 @@
+{
+
+	"dashboard": {
+
+	
+	"pageOne": "../news/news2.html",
+
+	
+	"pageTwo": "../news/news2.html",
+
+	
+	"pageThree": "../news/news2.html",
+
+	
+	"pageFour": "../news/news2.html",
+
+	
+	"pageFive": "../news/news2.html",
+
+	
+	"pageSix": "../news/news2.html",
+
+	
+	"pageSeven": "../news/news1.html",
+
+	
+	"pageEight": "../news/news2.html",
+
+	
+	"pageNine": "../charts/chart1.html",
+
+	
+	"pageTen": "../charts/chart2.html",
+
+	
+	"pageEleven": "../test/test.html",
+
+	
+	"pageTwelve": "../dash/dash.html",
+
+	
+	"pageThirteen": "../template/template.html",
+
+	
+	"pageFourteen": "../dash/jsoneditor.html",
+
+	
+	"jsonTitle": "Configuration Editor"
+
+	},
+
+	"test": {
+
+	
+	"mainTitle": "Test Page",
+
+	
+	"title": "Test Page",
+
+	
+	"fileOne": "dpsDaily.txt",
+
+	
+	"fileTwo": "dpsDaily.txt"
+
+	},
+
+	"template": {
+
+	
+	"mainTitle": "Template Page",
+
+	
+	"title": "Template Page",
+
+	
+	"fileOne": "dpsDaily.txt",
+
+	
+	"fileTwo": "dpsDaily.txt"
+
+	},
+
+	"mod1A": {
+
+	
+	"mainTitle": "DPS Daily",
+
+	
+	"title": "DPS",
+
+	
+	"fileOne": "dpsDaily.txt",
+
+	
+	"fileTwo": "dpsDaily.txt"
+
+	},
+
+	"mod1B": {
+
+	
+	"mainTitle": "DPS Weekly",
+
+	
+	"title": "DPS Weekly",
+
+	
+	"fileOne": "dpsWeek.txt",
+
+	
+	"fileTwo": "dpsWeek.txt"
+
+	},
+
+	"mod2A": {
+
+	
+	"mainTitle": "Cases Daily",
+
+	
+	"titleOne": "CPS Daily",
+
+	
+	"titleTwo": "MPS Daily",
+
+	
+	"fileOne": "cpsDaily.txt",
+
+	
+	"fileTwo": "mpsDaily.txt"
+
+	},
+
+	"mod2B": {
+
+	
+	"mainTitle": "Cases Weekly",
+
+	
+	"titleOne": "CPS Weekly",
+
+	
+	"titleTwo": "MPS Weekly",
+
+	
+	"fileOne": "cpsWeek.txt",
+
+	
+	"fileTwo": "mpsWeek.txt"
+
+	},
+
+	"mod3A": {
+
+	
+	"mainTitle": "Repack Daily",
+
+	
+	"titleOne": "Repack Daily",
+
+	
+	"titleTwo": "Repack Daily",
+
+	
+	"fileOne": "repackDaily.txt",
+
+	
+	"fileTwo": "repackDaily.txt"
+
+	},
+
+	"mod3B": {
+
+	
+	"mainTitle": "Repack Weekly",
+
+	
+	"titleOne": "Repack Weekly",
+
+	
+	"titleTwo": "Repack Weekly",
+
+	
+	"fileOne": "repackWeek.txt",
+
+	
+	"fileTwo": "repackWeek.txt"
+
+	},
+
+	"news1": {
+
+	
+	"mainTitle": "Daily Workload",
+
+	
+	"titleOne": "Daily Workload",
+
+	
+	"titleTwo": "Daily Workload",
+
+	
+	"fileOne": "dailyWorkload.txt",
+
+	
+	"fileTwo": "dailyWorkload.txt"
+
+	},
+
+	"news2": {
+
+	
+	"mainTitle": "Warehouse Updat",
+
+	
+	"titleOne": "Warehouse Update ",
+
+	
+	"titleTwo": "Warehouse Update",
+
+	
+	"fileOne": "warehouseUpdate.txt",
+
+	
+	"fileTwo": "warehouseUpdate.txt"
+
+	},
+
+	"chart1": {
+
+	
+	"mainTitle": "Dashboard",
+
+	
+	"titleOne": "Dashboard",
+
+	
+	"titleTwo": "Dashboard",
+
+	
+	"fileOne": "Overview.csv",
+
+	
+	"fileTwo": "Overview.csv"
+
+	},
+
+	"chart2": {
+
+	
+	"mainTitle": "Dashboard",
+
+	
+	"titleOne": "Dashboard",
+
+	
+	"titleTwo": "Dashboard",
+
+	
+	"fileOne": "Overview.csv",
+
+	
+	"fileTwo": "Overview.csv"
+
+	},
+
+	"index": {
+
+	
+	"pageOne": "./src/mod1/mod1A.html",
+
+	
+	"pageTwo": "./src/mod1/mod1B.html",
+
+	
+	"pageThree": "./src/mod2/mod2A.html",
+
+	
+	"pageFour": "./src/mod2/mod2B.html",
+
+	
+	"pageFive": "./src/mod3/mod3A.html",
+
+	
+	"pageSix": "./src/mod3/mod3B.html",
+
+	
+	"pageSeven": "./src/news/news1.html",
+
+	
+	"pageEight": "./src/news/news2.html",
+
+	
+	"pageNine": "./src/charts/chart1.html",
+
+	
+	"pageTen": "./src/charts/chart2.html",
+
+	
+	"pageEleven": "./src/test/test.html",
+
+	
+	"pageTwelve": "./src/dash/dash.html",
+
+	
+	"pageThirteen": "./src/template/template.html",
+
+	
+	"pageFourteen": "./src/dash/jsoneditor.html",
+
+	
+	"testPage": "testInformation"
+
+	}
+}

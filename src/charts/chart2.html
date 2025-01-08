@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" type="text/css" href="chart2.css">
+    <title></title>
+</head>
+
+<body class="draggable . chartSet">
+
+    <div class="grid_wrapper">
+
+            <div class="header_wrapper" >
+                <img src="../resources/Logo.jpg" float="left" class="logo">
+                <h1 id="Title" class="title"></h1>
+                <h1 id="Date" class="date">Date</h1>
+            </div>
+
+            <div class="body_wrapper">
+
+                <div class="chart_wrapper">
+                    <canvas id="chart" ></canvas>
+                    <div class="results_wrapper">
+                        <div id="dpsTotal">100</div>
+                        <div id="dpsRunningTotal">200</div>
+                        <div id="dpsHourlyGoal">400</div>
+                        <div id="dpsToGoal">300</div>
+                    </div>
+                </div>
+    
+                <div class="chart_wrapper2">
+                    <canvas id="chart2" ></canvas>
+                    <div class="results_wrapper">
+                        <div id="mpsTotal">100</div>
+                        <div id="mpsRunningTotal">200</div>
+                        <div id="mpsHourlyGoal">400</div>
+                        <div id="mpsToGoal">300</div>
+                    </div>
+                </div>
+    
+                <div class="chart_wrapper3">
+                    <canvas id="chart3" ></canvas>
+                    <div class="results_wrapper">
+                        <div id="cpsTotal">100</div>
+                        <div id="cpsRunningTotal">200</div>
+                        <div id="cpsHourlyGoal">400</div>
+                        <div id="cpsToGoal">300</div>
+                    </div>
+                </div>
+    
+                <div class="chart_wrapper4">
+                    <canvas id="chart4" ></canvas>
+                    <div class="results_wrapper">
+                        <div id="repackTotal">100</div>
+                        <div id="repackRunningTotal">200</div>
+                        <div id="repackHourlyGoal">400</div>
+                        <div id="repackToGoal">300</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+    </div>
+
+    
+    <script src="../resources/d3.js"></script>
+    <script src="chart2.js"></script>
+    <script src="../resources/chart.js"></script>
+    <script>
+        window.$ = window.jQuery = require('../resources/jquery-3.4.1.min.js');
+        window.$ = window.jQuery = require('../resources/d3.js');
+        window.$ = window.jQuery = require('../resources/canvasJS.js');
+    </script>
+    <!--<script src="test.js"></script>-->
+
+
+</body>
+
+</html>
